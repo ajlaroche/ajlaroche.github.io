@@ -102,7 +102,7 @@ aside   {
 }
 .wrapper    {
     min-height: 100%;
-    margin-bottom: -50px;
+    /* margin-bottom: -50px; */
 }
 form    {
     padding-left: 20px;
