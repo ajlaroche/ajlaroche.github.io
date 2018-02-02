@@ -102,7 +102,7 @@ aside   {
 }
 .wrapper    {
     min-height: 100%;
-    /* margin-bottom: -50px; */
+    margin-bottom: -50px;
 }
 form    {
     padding-left: 20px;
@@ -157,6 +157,8 @@ form    {
     border-top-style: solid;
     border-width: 5px;
     margin-top: 30px;
+    position: relative;
+    bottom: -25px;
 }
 .footer, .push  {
     height: 50px;
