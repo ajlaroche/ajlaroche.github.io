@@ -1,165 +1,125 @@
-body    {
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    margin-bottom: 60px; /* Margin bottom by footer height */
     background-image: url("../images/concrete_seamless.png");
-    font-size: 18px;
     font-family: Arial,'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
-    line-height: 1.5;
-    height: 100%;
-    }
-
-header  {
-    background-color: #ffffff;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-      }
-
-h1  {
-    background-color: #4aaaa5;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    font-size: 32px;
-    color: white;
-    width: 280px;
-    padding: 20px;
-    display: inline-block;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 20%;
-   }
-nav {
-    float: right;
-    padding: 20px;
-    margin-top: 10px;
-    margin-left: 0px;
-    margin-right: 15%;
-    margin-bottom: 0px;
   }
-nav a   {
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none;
-    color: #777;
-    padding: 30px;
-    }
-
-section {
-    width: 650px;
-    background-color: #ffffff;
-    margin-left: 20%;
-    margin-top: 30px;
-    color: #777777;
-    float: left;
-}
-h2 {
-    color: #4aaaa5;
-    font-size: 24px;
-    padding: 20px;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    border-bottom: #dddddd;
-    border-bottom-style: solid;
-}
-h3 {
-    color: #4aaaa5;
-    font-size: 20px;
-    margin: 15px;
-    padding: 15px;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    border-bottom: #dddddd;
-    border-bottom-style: solid;
-}
-#myfoto {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    display: inline-block;
-    float: left;
-}
-
-.AllAboutMe {
-padding-left:  20px;
-padding-right: 20px;
-padding-top: 10px;
-padding-bottom: 10px;
-}
-
-aside   {
-    width: 270px;
-    margin-left: 40px;
-    margin-top: 30px;
-    background-color: #ffffff;
-    float: left;
-}
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.SocialLinks    {
-    margin: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-.wrapper    {
-    min-height: 100%;
-    /* margin-bottom: -50px; */
-}
-form    {
-    padding-left: 20px;
-    padding-bottom: 20px;
-}
-.NameEmail  {
-    width: 500px;
-    padding: 5px;
-    }
-#ContactMessageBox  {
-    width: 500px;
-    height: 200px;
-    padding: 5px;
-}
-.Portfolio  {
-    width: 280px;
-    height: 200px;
-    display: inline-block;
-    margin: 20px;
-    position: relative;
-    }
-.PortfolioTitle {
-    color: #ffffff;
-    background-color: #4aaaa5;
-    margin: 0px;
-    border: none;
-    text-align: center;
-    font-size: 16px;
-    padding: 15px 0px 15px 0px;
-   position: absolute;
-   top: 135px;
-   width: 100%;
-      }
-::placeholder {
-    color: #777777;
-    opacity: 0.5;
-}
-.Buttons    {
-    background-color: #4aaaa5;
-    color: #ffffff;
-    font-size: 18px;
-    padding: 5px;
-    border: none;
-    width: 100px;
-}
-.footer  {
+  .footer {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    height: 80px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
     background-color: #666666;
     text-align: center;
-    padding: 25px;
-    color: rgb(173, 168, 168);
     border-top-color: #4aaaa5;
     border-top-style: solid;
     border-width: 5px;
-    margin-top: 30px;
-    position: relative;
-    bottom: -75px;
-}
-.footer, .push  {
+  }
+
+  #toprow{
     height: 50px;
+  }
+  .main-column{
+    background: #ffffff;
+  }
+  .card{
+    border: none;
+  }
+  .card-header:first-child{
+    border-bottom: #dddddd solid 2px;
+  }
+  .card-header{
+    background: #ffffff;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    font-size: 1.35rem;
+    font-weight: bold;
+  }
+  .sociallinks{
+    padding: 5px;
+  }
+  img.rounded.float-left {
+    margin-right: 15px;
+    margin-top: 5px;}
+  .navbar-light .navbar-brand {
+      color: #ffffff;
+      background: #4aaaa5;
+      font-family: 'Georgia', Times, 'Times New Roman', serif;
+      font-weight: bold;
+      font-size: 2rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+  .navbar{
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    padding-left: 12rem;
+    color: #777777;
+  }
+  .nav-link{
+    color: #777777;
+  }
+
+h2{
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
+  color: #4aaaa5;
+  margin-top: 0.5rem;
+  border-bottom: #dddddd solid 2px;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
 }
+h3 {
+  color: #ffffff;
+  background: #4aaaa5;
+  font-size: 1.5rem;
+  text-align: center;
+  /* margin: 15px; */
+  padding: 0.5rem;
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+.justify-content-end{
+  padding-right: 12rem;
+}
+.form-row{
+  padding-bottom: 1rem;
+  margin-left: 0rem;
+}
+#inputMessage{
+  height: 15rem;
+}
+.form-control::placeholder{
+  color: #777777;
+  opacity: 0.5;
+}
+.btn-primary{
+  background-color: #4aaaa5;
+  border-color: #4aaaa5;
+}
+.card-img-overlay{
+  padding: 0rem;
+  top: 200px;
+}
+.card-img{
+  height: 267px;
+}
+.portfoliorows{
+  padding: 2rem;
+}
+@media screen and (max-width: 980px){
+  .navbar{padding-left: 0rem; padding-right: 0%;}
+  .navbar-brand{width:100%;margin-right: 0rem;}
+  .justify-content-end{padding-right: 0rem;}
+  .col-md-4{padding-top: 1rem;}
+  .card-img{height: 100px;}
+  .card-img-overlay{top: 60px;}
+  .card-header{padding: 0.25rem;}
+  .card-body{padding: 0.75rem 0.25rem}
+  h3{font-size: 0.75rem;}
+}
+@media screen and (max-width: 768px){
+  .col-md-4{padding: 1rem 0rem;}

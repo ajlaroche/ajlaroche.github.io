@@ -1,30 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>About Me</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>Antony Laroche</h1>
-            <nav>
-                <a href="./index.html">About</a>
-                <a href="./portfolio.html">Portfolio</a>
-                <a href="./contact.html">Contact</a>
-            </nav>
-        </header>
-        <div class="clearfix">
-            <section>
+    <!--start of nav section-->
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Antony Laroche</span>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="./index.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row" id="toprow"></div>
+        <div class="row">
+            <div class="col-md-8 main-column">
                 <h2>About Me</h2>
-                <img id="myfoto" src="./assets/images/CoolPicMe.jpg" alt="Antony Laroche" width="200" height="267">
-                <p class="AllAboutMe">I have a Bachelor's degree in Chemical Engineering from the University of Florida and a Master's in Engineering
+                <img id="myfoto" src="./assets/images/CoolPicMe.jpg" class="rounded float-left" alt="Antony Laroche" width="200">
+                <p class="AllAboutMe"> I have a Bachelor's degree in Chemical Engineering from the University of Florida and a Master's in Engineering
                     Management from the George Washington University. I have spent the last 18 years working in the refining
                     industry in a wide variety of roles ranging from process engineering to project development and refinery
                     economics.
@@ -33,26 +43,35 @@
                     lot of my spare time reading and analyzing the financial news of the day. I take pleasure in deciphering
                     insights from the wealth of data available to us from news outlets and government agencies with the ultimately
                     goal of converting those insight to personal investment strategies and general worldly advice. </p>
-                <p class="AllAboutMe">I aspire to be a Full Stack Web Developer who is available to perform freelance work for content producers who want to
-                    share their art, skills, wisdom, and knowledge with the world. I also look forward to using my skills to enhance
-                    3rd party developed websites by improving user experience, adding interactivity, data collection and analysis.
+                <p class="AllAboutMe">I aspire to be a Full Stack Web Developer who is available to perform freelance work for content producers
+                    who want to share their art, skills, wisdom, and knowledge with the world. I also look forward to using
+                    my skills to enhance 3rd party developed websites by improving user experience, adding interactivity,
+                    data collection and analysis.
                 </p>
-            </section>
-            <aside class="sidebar">
-                <h3>Connect with Me</h3>
-                <div class="SocialLinks">
-                    <a href="http://github.com/ajlaroche">  <img src="./assets/images/GitHubIcon.png" alt="GitHub"></a>
-                    <a href="http://linkedin.com/in/antony-laroche-782248121"> <img src="./assets/images/linkedInIcon.png" alt="LinkedIn"></a> 
-                    <a href="https://stackexchange.com/users/12229521/ajtherock"> <img src="./assets/images/StackOverflowIcon.png" alt="Stacked Overflow"></a>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card text-center">
+                    <div class="card-header">Connect with Me</div>
+                    <div class="card-body justify-content-center">
+                        <a href="http://github.com/ajlaroche">
+                            <img class="sociallinks" src="./assets/images/GitHubIcon.png" alt="GitHub"> </a>
+                        <a href="http://linkedin.com/in/antony-laroche-782248121">
+                            <img class="sociallinks" src="./assets/images/linkedInIcon.png" alt="LinkedIn"> </a>
+                        <a href="https://stackexchange.com/users/12229521/ajtherock">
+                            <img class="sociallinks" src="./assets/images/StackOverflowIcon.png" alt="Stacked Overflow"> </a>
+                    </div>
                 </div>
-            </aside>
+            </div>
         </div>
-        <div class="push"></div>
     </div>
     <footer class="footer">
-        <p>@Copyright 2018 Antony Laroche</p>
+        <div class="container">
+            <span class="text-light">@Copyright 2018 Antony Laroche</span>
+        </div>
     </footer>
-
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
