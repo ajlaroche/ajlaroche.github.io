@@ -1,2 +1,2 @@
-# Basic-Portfolio
-My professional portfolio
+# Bootstrap-Portfolio
+Week 2 Bootstrap homework
